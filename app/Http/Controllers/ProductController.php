@@ -62,7 +62,6 @@ class ProductController extends Controller
             'name' => $request->input('name'),
             'email' => $request->input('email'),
             'quantity' => $quantity,
-            'product_id' => $product->id,
         ]);
 
         $product->decrement('stock', $quantity);

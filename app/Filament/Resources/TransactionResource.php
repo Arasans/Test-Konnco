@@ -22,6 +22,7 @@ class TransactionResource extends Resource
                                         ->searchable(),
                 Tables\Columns\TextColumn::make('status')
                                         ->searchable(),
+                Tables\Columns\TextColumn::make('quantity'),
                 Tables\Columns\TextColumn::make('name')
                                         ->searchable(),
                 Tables\Columns\TextColumn::make('email')
